@@ -15,6 +15,6 @@ app.use('/api/v1', jobRoute);
 
 app.use("/api/v1", stipendRoute);
 
-// jobScheduler();
+jobScheduler();
 
 module.exports = app;
