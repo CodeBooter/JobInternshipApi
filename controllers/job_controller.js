@@ -57,11 +57,11 @@ catch(err){
 //get single job
 exports.getSingleJob = async (req, res) => {
     try {
-      const job = await job.findById(req.params.id);
+      const job1 = await job.findById(req.params.id);
       res.status(200).json({
         status: 'success',
         data: {
-          job
+          job1
         }
       });
     } catch (err) {
@@ -71,7 +71,24 @@ exports.getSingleJob = async (req, res) => {
       });
     }
   };
+
+  // exports.getSingleJob = async (req, res) => {
     
+  //     const job1 = await job.findById(req.params.id);
+  //     if(!job1){
+  //       return res.status(400).json({
+  //               status: 'fail',
+  //                 message: err
+  //              });
+  //     }
+  //     res.status(200).json({
+  //       status: 'found',
+  //         job1,
+  //      });
+
+     
+  //   } 
+  
 
 
 
