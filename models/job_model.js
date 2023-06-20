@@ -1,12 +1,7 @@
 const mongoose = require('mongoose');
 
 const jobSchema = new mongoose.Schema({
-    id: {
-        type: Number,
-        autoIncrement: true,
-        trim: false,
-        maxlength: [10, 'id cannot exceed 10 characters']
-    },
+    
     title: {
         type: String,
         required: [true, 'Please enter job title'],
