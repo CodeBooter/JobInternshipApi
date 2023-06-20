@@ -7,7 +7,7 @@ const { getJobs,createJob,getSingleJob } = require('../controllers/job_controlle
 const router =express.Router();
 // jobs route
 router.route("/jobs").get(getJobs);
-router.route("/job/:id").get(getSingleJob);
+router.route("/jobs/:id").get(getSingleJob);
 
 
 
