@@ -1,24 +1,14 @@
 const mongoose = require('mongoose');
 
 const jobSchema = new mongoose.Schema({
-    id: {
-        type: Number,
-        autoIncrement: true,
-        trim: false,
-        maxlength: [10, 'id cannot exceed 10 characters']
-    },
+   
     title: {
         type: String,
         required: [true, 'Please enter job title'],
         trim: false,
         maxlength: [30, 'Job title cannot exceed 100 characters']
     },
-    description: {
-        type: String,
-        required: [true, 'Please enter job description'],
-        trim: false,
-        maxlength: [100, 'Job description cannot exceed 1000 characters']
-    },
+    
     salary: {
         type: Number,
         required: [true, 'Please enter stipend'],
@@ -44,24 +34,8 @@ const jobSchema = new mongoose.Schema({
         trim: false,
         maxlength: [100, 'applylink cannot exceed 100 characters']
     },
-    skills: {
-        type: [String],
-        required: [true, 'Please enter skills'],
-        trim: false,
-        maxlength: [30, 'skills cannot exceed 100 characters']
-    },
-    type: {
-        type: String,
-        required: [true, 'Please enter type'],
-        trim: false,
-        maxlength: [15, 'type cannot exceed 100 characters']
-    },
-    image:{
-        type: String,
-        required: [true, 'Please enter image urls'],
-        trim: false,
-        maxlength: [100, 'image urls cannot exceed 100 characters']
-    },
+   
+   
     deadline: {
         type: Date,
         required: [true, 'Please enter deadline'],
