@@ -1,5 +1,6 @@
 const job = require('../models/job_model');
 // const {newJobSchema} = require('../models/job_model');
+
 //create job and save to database
 exports.createJob = async (req, res) => {
     try {
