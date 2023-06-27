@@ -27,7 +27,12 @@ const internshipSchema = new mongoose.Schema({
         trim: false,
         maxlength: [100, 'Applylink cannot exceed 100 characters']
     },
-   
+    duration: {
+        type: String,
+        required: [true, 'Please enter duration'],
+        trim: false,
+        maxlength: [40, 'duration cannot exceed 40 characters']
+    },  
    
    
     deadline: {
@@ -40,6 +45,7 @@ const internshipSchema = new mongoose.Schema({
         type: Date,
         default: Date.now
     }
+    
 });
 
 module.exports = mongoose.model('Internship', internshipSchema);
