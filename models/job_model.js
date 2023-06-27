@@ -15,8 +15,8 @@ const jobSchema = new mongoose.Schema({
         maxlength: [100, 'image urls cannot exceed 100 characters']
     },
     
-    salary: {
-        type: Number,
+    stipend: {
+        type: String,
         required: [true, 'Please enter stipend'],
         trim: false,
         maxlength:[10, 'salary cannot exceed 10 characters'],
@@ -34,7 +34,7 @@ const jobSchema = new mongoose.Schema({
         trim: false,
         maxlength: [20, 'company name cannot exceed 100 characters']
     },
-    applylink: {
+    applyLink: {
         type: String,
         required: [true, 'Please enter applylink'],
         trim: false,
