@@ -34,10 +34,9 @@ exports.getInternships= async (req, res) => {
     const internships = await Internship.find();
 
     res.status(200).json({
-        status: 'success',
-        data: {
+        
             internships
-        }
+        
     });
 
 };
