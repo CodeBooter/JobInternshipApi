@@ -27,7 +27,7 @@ const internshipSchema = new mongoose.Schema({
         maxlength: [20, 'Location cannot exceed 20 characters']
     },
    
-    applylink: {
+    applyLink: {
         type: String,
         required: [true, 'Please enter applylink'],
         trim: false,
