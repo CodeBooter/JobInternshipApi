@@ -40,10 +40,9 @@ exports.getJobs = async (req, res) => {
     const jobs = await job.find();
 
     res.status(200).json({
-        status: 'success',
-        data: {
+        
             jobs
-        }
+        
     });
 }
 catch(err){
