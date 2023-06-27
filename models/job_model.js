@@ -34,6 +34,12 @@ const jobSchema = new mongoose.Schema({
         trim: false,
         maxlength: [100, 'applylink cannot exceed 100 characters']
     },
+    duration: {
+        type: String,
+        required: [true, 'Please enter duration'],
+        trim: false,
+        maxlength: [40, 'duration cannot exceed 40 characters']
+    },
    
    
     deadline: {
@@ -45,8 +51,8 @@ const jobSchema = new mongoose.Schema({
     createdAt: {
         type: Date,
         default: Date.now
-    }
-
+    },
+    
 
 
     
