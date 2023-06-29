@@ -12,7 +12,7 @@ const jobSchema = new mongoose.Schema({
         type: String,
         required: [true, 'Please enter image urls'],
         trim: false,
-        maxlength: [100, 'image urls cannot exceed 100 characters']
+        maxlength: [300, 'image urls cannot exceed 300 characters']
     },
     
     stipend: {
@@ -46,12 +46,7 @@ const jobSchema = new mongoose.Schema({
         trim: false,
         maxlength: [40, 'duration cannot exceed 40 characters']
     },
-    applyBy: {
-        type: String,
-        required: [true, 'Please enter apply by date'],
-        trim: false,
-        maxlength: [40, 'applyBy cannot exceed 40 characters']
-    },
+    
    
    
     deadline: {
