@@ -28,12 +28,7 @@ const jobSchema = new mongoose.Schema({
         trim: false,
         maxlength: [20, 'location cannot exceed 100 characters']
     },
-    company: {
-        type: String,
-        required: [true, 'Please enter company name'],
-        trim: false,
-        maxlength: [20, 'company name cannot exceed 100 characters']
-    },
+    
     applyLink: {
         type: String,
         required: [true, 'Please enter applylink'],
